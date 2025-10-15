@@ -1,5 +1,5 @@
 #N canvas 827 239 527 327 12;
-#N canvas 0 50 450 300 clock-out 1;
+#N canvas 0 50 450 300 clock-out 0;
 #X obj 508 360 metro;
 #X obj 508 386 bng 25 250 50 0 empty empty empty 17 7 0 10 #191919 #ffffff #ffffff;
 #X floatatom 580 289 5 0 0 0 - - - 12;
@@ -67,6 +67,7 @@
 #X obj 201 21 tgl 25 0 empty empty empty 17 7 0 10 #000000 #ffffff #ffffff 0 1;
 #X obj 656 100 int 40;
 #X obj 751 100 int 100;
+#X text 131 20 clock on;
 #X connect 0 0 2 0;
 #X connect 0 0 13 0;
 #X connect 0 1 4 0;

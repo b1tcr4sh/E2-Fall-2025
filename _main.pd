@@ -6,8 +6,8 @@
 #X obj 217 936 r ctrl-wheel;
 #X obj 217 969 expr ((($f1 / 127) * 2) - 1);
 #X floatatom 217 995 5 0 0 0 - - - 12;
-#X obj 1628 809 vsl 17 128 0 127 0 0 empty empty empty 0 -9 0 10 #191919 #ffffff #ffffff 0 1;
-#X obj 1624 968 s ctrl-wheel;
+#X obj 1608 888 vsl 17 128 0 127 0 0 empty empty empty 0 -9 0 10 #191919 #ffffff #ffffff 0 1;
+#X obj 1604 1047 s ctrl-wheel;
 #X obj 168 1077 dac~;
 #X text 184 904 wheel controls panning;
 #X obj 621 233 cue-sequencer;
@@ -15,10 +15,8 @@
 #X obj 378 500 throttle-control;
 #X msg 378 715 \; pd dsp \$1;
 #X obj 378 653 r master-on;
-#X obj 621 961 cue-0-impl;
-#X obj 621 905 tgl 25 0 empty empty empty 17 7 0 10 #000000 #ffffff #ffffff 0 1;
-#X obj 1429 968 s ctrl-throttle;
-#X obj 1429 799 vsl 17 128 0 127 0 0 empty empty empty 0 -9 0 10 #191919 #ffffff #ffffff 0 1;
+#X obj 1409 1047 s ctrl-throttle;
+#X obj 1409 878 vsl 17 128 0 127 0 0 empty empty empty 0 -9 0 10 #191919 #ffffff #ffffff 0 1;
 #X connect 3 0 9 0;
 #X connect 3 1 9 1;
 #X connect 4 0 5 0;
@@ -27,4 +25,3 @@
 #X connect 7 0 8 0;
 #X connect 15 0 14 0;
 #X connect 17 0 16 0;
-#X connect 19 0 18 0;

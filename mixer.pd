@@ -1,5 +1,5 @@
 #N canvas 827 239 223 327 12;
-#X obj 663 29 vsl 17 128 0 1 0 0 empty empty empty 0 -9 0 10 #000000 #ffffff #ffffff 0 1;
+#X obj 663 37 vsl 17 128 0 1 0 0 empty empty empty 0 -9 0 10 #000000 #ffffff #ffffff 0 1;
 #X obj 11 42 vu 20 120 empty empty -1 -8 0 10 #000000 #ffffff 1 0;
 #X obj 701 48 vu 20 120 empty empty -1 -8 0 10 #000000 #ffffff 1 0;
 #X obj 10 -64 env~;
@@ -63,6 +63,17 @@
 #X text 400 7 6;
 #X text 479 7 7;
 #X text 558 7 8;
+#X text 663 3 out;
+#X obj 967 4 adc~;
+#X obj 834 50 vu 20 120 empty empty -1 -8 0 10 #000000 #ffffff 1 0;
+#X obj 834 4 - 100;
+#X obj 798 39 vsl 17 128 0 1 0 0 empty empty empty 0 -9 0 10 #000000 #ffffff #ffffff 0 1;
+#X text 798 3 in;
+#X obj 798 194 s in-lev;
+#X obj 1046 68 env~;
+#X obj 1046 94 s in-rms;
+#X obj 834 -38 r in-rms;
+#X obj 967 135 throw~ in;
 #X connect 0 0 54 0;
 #X connect 3 0 5 0;
 #X connect 4 0 55 0;
@@ -117,4 +128,10 @@
 #X connect 52 0 4 0;
 #X connect 53 0 52 1;
 #X connect 56 0 6 0;
-#X coords 0 0 1 1 750 182 1 0 -1;
+#X connect 65 0 71 0;
+#X connect 65 0 74 0;
+#X connect 67 0 66 0;
+#X connect 68 0 70 0;
+#X connect 71 0 72 0;
+#X connect 73 0 67 0;
+#X coords 0 0 1 1 897 186 1 0 -1;
