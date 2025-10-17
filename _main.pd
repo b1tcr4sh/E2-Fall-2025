@@ -1,4 +1,6 @@
-#N canvas 827 239 527 327 12;
+#N canvas 0 0 1920 976 12;
+#X declare -lib else -path else;
+#X declare -lib cyclone -path cyclone;
 #X obj 390 233 steering_wheel;
 #X obj 526 652 tgl 87 0 master-on empty empty 17 7 0 10 #00ee1d #ffffff #ffffff 0 1;
 #X text 526 743 master on/off;
@@ -17,6 +19,8 @@
 #X obj 378 653 r master-on;
 #X obj 1409 1047 s ctrl-throttle;
 #X obj 1409 878 vsl 17 128 0 127 0 0 empty empty empty 0 -9 0 10 #191919 #ffffff #ffffff 0 1;
+#X obj 391 164 declare -lib else -path else;
+#X obj 390 197 declare -lib cyclone -path cyclone;
 #X connect 3 0 9 0;
 #X connect 3 1 9 1;
 #X connect 4 0 5 0;
