@@ -1,0 +1,17 @@
+#N canvas 827 239 527 327 12;
+#X obj 441 193 inlet;
+#X text 441 170 volume (0-1) in;
+#X text 441 125 \$1 is index (0-7);
+#X obj 345 220 int \$1;
+#X obj 345 193 loadbang;
+#X floatatom 441 219 5 0 0 0 - - - 12;
+#X obj 307 187 bng 25 250 50 0 empty empty empty 17 7 0 10 #000000 #ffffff #ffffff;
+#X obj 418 282 pak i f;
+#X text 418 368 outputs list where first argument is track id and second is volume;
+#X obj 418 334 s ableton-track-volume;
+#X connect 0 0 5 0;
+#X connect 3 0 7 0;
+#X connect 4 0 3 0;
+#X connect 5 0 7 1;
+#X connect 6 0 3 0;
+#X connect 7 0 9 0;
