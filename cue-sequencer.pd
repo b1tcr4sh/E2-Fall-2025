@@ -22,10 +22,10 @@
 #X obj 176 36 bng 31 250 50 0 init-cue empty empty 17 7 0 10 #191919 #ffffff #ffffff;
 #X obj 87 37 bng 31 250 50 0 back-cue empty empty 17 7 0 10 #191919 #ffffff #ffffff;
 #X obj 128 37 bng 31 250 50 0 step-cue empty empty 17 7 0 10 #191919 #ffffff #ffffff;
-#X text 14 6 cue pos;
-#X text 176 6 init;
-#X text 128 6 step;
-#X text 87 6 back;
+#X text 14 15 cue pos;
+#X text 176 15 init;
+#X text 128 15 step;
+#X text 87 15 back;
 #X obj 14 82 cue 0;
 #X obj 283 82 cue 1;
 #X obj 556 82 cue 2;
