@@ -14,7 +14,7 @@
 #X obj 1562 660 vsl 17 128 0 127 0 0 empty empty empty 0 -9 0 10 #191919 #ffffff #ffffff 0 1;
 #X obj 496 150 declare -lib else -path else;
 #X obj 496 183 declare -lib cyclone -path cyclone;
-#X obj 408 652 ableton-track-send;
+#X obj 408 652 ableton-send;
 #X connect 3 0 4 0;
 #X connect 8 0 7 0;
 #X connect 10 0 9 0;
