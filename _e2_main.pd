@@ -3,15 +3,15 @@
 #X declare -lib cyclone -path cyclone;
 #X obj 390 233 steering_wheel;
 #X obj 621 652 tgl 87 0 master-on empty empty 17 7 0 10 #00ee1d #ffffff #ffffff 0 1;
-#X text 621 738 master on/off;
-#X obj 1757 660 vsl 17 128 0 127 0 0 empty empty empty 0 -9 0 10 #191919 #ffffff #ffffff 0 1;
+#X text 621 737 master on/off;
+#X obj 1757 662 vsl 17 128 0 127 0 0 empty empty empty 0 -9 0 10 #191919 #ffffff #ffffff 0 1;
 #X obj 1757 817 s ctrl-wheel;
 #X obj 621 233 cue-sequencer;
 #X obj 378 500 throttle-control;
 #X msg 390 183 \; pd dsp \$1;
 #X obj 390 151 r master-on;
 #X obj 1562 817 s ctrl-throttle;
-#X obj 1562 660 vsl 17 128 0 127 0 0 empty empty empty 0 -9 0 10 #191919 #ffffff #ffffff 0 1;
+#X obj 1562 662 vsl 17 128 0 127 0 0 empty empty empty 0 -9 0 10 #191919 #ffffff #ffffff 0 1;
 #X obj 496 150 declare -lib else -path else;
 #X obj 496 183 declare -lib cyclone -path cyclone;
 #X obj 408 652 ableton-send;
