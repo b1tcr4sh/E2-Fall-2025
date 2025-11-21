@@ -9,7 +9,7 @@
 #X floatatom 644 440 5 0 0 0 - - - 12;
 #X text 644 384 param value in;
 #X obj 441 590 s ableton-control-param;
-#X obj 441 503 pak f f f f;
+#X obj 441 503 pak i i i f;
 #X connect 1 0 10 0;
 #X connect 2 0 10 1;
 #X connect 3 0 10 2;
